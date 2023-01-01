@@ -24,7 +24,7 @@ jobs:
           automake-wrapper
           make
           libtool
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - run: ./setup.sh
     - run: ./build.sh
     - run: ./test.sh
