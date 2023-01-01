@@ -28,3 +28,8 @@ jobs:
     - run: ./setup.sh
     - run: ./build.sh
     - run: ./test.sh
+    - uses: actions/download-artifact@v3
+    - name: Download artifact
+      uses: actions/download-artifact@v3
+      with:
+       name: my-artifact
