@@ -28,7 +28,5 @@ jobs:
     - run: ./setup.sh
     - run: ./build.sh
     - run: ./test.sh
+    - uses: actions/upload-artifact@v3
     - uses: actions/download-artifact@v3
-      with:
-       name: my-artifact
-       path: artifacts/$MINGW_CHOST
