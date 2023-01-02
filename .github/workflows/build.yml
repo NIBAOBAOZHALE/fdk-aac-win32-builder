@@ -29,4 +29,7 @@ jobs:
     - run: ./build.sh
     - run: ./test.sh
     - uses: actions/upload-artifact@v3
+      with:
+        name: dist-without-markdown
+        path: artifacts/$MINGW_CHOST
     - uses: actions/download-artifact@v3
